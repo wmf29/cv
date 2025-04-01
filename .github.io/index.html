@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - وعد مازن بنات </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* التنسيق العام */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+        }
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #f1c40f;
+        }
+        
+        section {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .experience-item h3, .education-item h3 {
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: var(--secondary-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--secondary-color);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="صورة الشخصية" class="profile-img">
+            <h1>وعد مازن علي بنات</h1>
+            <p>مهندس IT </p>
+            
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:example@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+           
+        <section class="experience">
+            <h2><i class="fas fa-briefcase"></i> الخبرات العملية</h2>
+            
+            <div class="experience-item">
+                <h3>أعمال يدوية - ريادى  </h3>
+                <p class="date">يناير 2021 - الحاضر</p>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="education">
+            <h2><i class="fas fa-graduation-cap"></i> التعليم</h2>
+            
+            <div class="education-item">
+                <h3>بكالوريوس علوم الحاسوب</h3>
+                <p class="date">جامعة القدس المفتوحة - 2021 - 2026</p>
+                <p>تخصص في أنظمة المعلومات </p>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2><i class="fas fa-cogs"></i> المهارات</h2>
+            
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">UI/UX</span>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <h2><i class="fas fa-envelope"></i> تواصل معي</h2>
+            <p><i class="fas fa-phone"></i> +970 000000000000</p>
+            <p><i class="fas fa-envelope"></i> example@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> غزة، فلسطين</p>
+            
+            <a href="#" class="download-btn"><i class="fas fa-download"></i> تحميل السيرة الذاتية (PDF)</a>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> جميع الحقوق محفوظة | تم التطوير بواسطة <a href="#" style="color: #f1c40f;">وعد مازن بنات</a></p>
+    </footer>
+
+    <script>
+        // إضافة السنة الحالية تلقائياً
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // يمكنك إضافة المزيد من الوظائف هنا
+    </script>
+</body>
+</html>
