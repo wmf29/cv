@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>السيرة الذاتية - وعد مازن</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary-color: #2A5C82;
+      --secondary-color: #1A3A4F;
+      --accent-color: #FFD700;
+      --background-light: #f5f5f5;
+      --text-light: #333;
+      --background-dark: #1f1f1f;
+      --text-dark: #f1f1f1;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: var(--background-light);
+      color: var(--text-light);
+      margin: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background: var(--background-dark);
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    body.dark-mode .container {
+      background: #2e2e2e;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--accent-color);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      border-right: 4px solid var(--accent-color);
+      padding-right: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      background: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-mode" onclick="toggleDarkMode()">وضع داكن</button>
+
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="صورة وعد" class="profile-img"/>
+      <h1>وعد مازن علي بنات</h1>
+      <p>مطور واجهات أمامية</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="projects.html">المشاريع</a>
+    </nav>
+
+    <section>
+      <h2><i class="fas fa-briefcase"></i> الخبرات العملية</h2>
+      <p>ريادية في مجال الأعمال اليدوية منذ 2021.</p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-graduation-cap"></i> التعليم</h2>
+      <p>بكالوريوس علوم الحاسوب - جامعة القدس المفتوحة</p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-code"></i> المهارات</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+      </div>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-address-card"></i> التواصل</h2>
+      <p><i class="fas fa-phone"></i> +970 599 000 000</p>
+      <p><i class="fas fa-envelope"></i> waad@example.com</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> جميع الحقوق محفوظة - وعد مازن</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
