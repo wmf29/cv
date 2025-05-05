@@ -1,288 +1,246 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>السيرة الذاتية - وعد مازن بنات</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #2A5C82;
-            --secondary: #1A3A4F;
-            --accent: #FFD700;
-            --text: #3D3D3D;
-            --bg: #F8F9FA;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="السيرة الذاتية لوعد مازن علي بنات، مطور واجهات ويب." />
+  <title>السيرة الذاتية - وعد مازن بنات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #2A5C82;
+      --secondary-color: #1A3A4F;
+      --accent-color: #FFD700;
+      --light-bg: #f5f5f5;
+      --card-bg: #f9f9f9;
+      --text-color: #333;
+    }
 
-        body {
-            font-family: 'Tajawal', sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            background: var(--bg);
-            color: var(--text);
-        }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      background: var(--light-bg);
+      color: var(--text-color);
+    }
 
-        .glassmorphism {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-            border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 20px;
-        }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: white;
+    }
 
-        header {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-            margin-bottom: -60px;
-            position: relative;
-        }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      margin: 1rem auto;
+    }
 
-        .profile-container {
-            @extend .glassmorphism;
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    .social-links {
+      margin-top: 1rem;
+    }
 
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-            transform: translateY(-80px);
-            margin-bottom: -60px;
-        }
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.8rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
 
-        .social-links a {
-            color: white;
-            margin: 0 15px;
-            font-size: 1.8rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    .social-links a:hover {
+      color: var(--accent-color);
+      transform: translateY(-3px);
+    }
 
-        .social-links a:hover {
-            color: var(--accent);
-            transform: translateY(-3px);
-        }
+    main {
+      padding: 2rem;
+    }
 
-        section {
-            @extend .glassmorphism;
-            padding: 2.5rem;
-            margin: 2rem 0;
-        }
+    section {
+      margin-bottom: 2rem;
+    }
 
-        h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            position: relative;
-            padding-right: 1.5rem;
-            margin-bottom: 2rem;
-        }
+    h2 {
+      color: var(--primary-color);
+      border-right: 4px solid var(--accent-color);
+      padding-right: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
 
-        h2::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: -8px;
-            width: 60px;
-            height: 4px;
-            background: var(--accent);
-            border-radius: 2px;
-        }
+    .experience-item, .education-item {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .timeline {
-            position: relative;
-            padding-right: 30px;
-        }
+    .experience-item:hover, .education-item:hover {
+      transform: translateX(10px);
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.08);
+    }
 
-        .timeline::before {
-            content: "";
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--primary);
-            border-radius: 2px;
-        }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
 
-        .timeline-item {
-            position: relative;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
+    .skill-card {
+      background: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .timeline-item:hover {
-            transform: translateX(15px);
-        }
+    .skill-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: 0.5s;
+    }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1.5rem;
-        }
+    .skill-card:hover::after {
+      left: 100%;
+    }
 
-        .skill-card {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
 
-        .skill-card::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.15), transparent);
-            transform: rotate(45deg);
-            animation: shine 3s infinite;
-        }
+    .download-btn:hover {
+      background: var(--secondary-color);
+      transform: scale(1.05);
+    }
 
-        @keyframes shine {
-            0% { transform: translateX(-150%) rotate(45deg); }
-            100% { transform: translateX(150%) rotate(45deg); }
-        }
+    address {
+      font-style: normal;
+      line-height: 2;
+    }
 
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.2rem 2.5rem;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white !important;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
+    footer {
+      background: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
 
-        .download-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(42, 92, 130, 0.3);
-        }
+    @media (max-width: 768px) {
+      .container {
+        margin: 1rem;
+        border-radius: 0;
+      }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            
-            header {
-                padding: 3rem 1rem;
-            }
-            
-            .profile-img {
-                width: 160px;
-                height: 160px;
-            }
-        }
-    </style>
+      header {
+        padding: 1.5rem;
+      }
+
+      .profile-img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="profile-container">
-                <img src="profile.jpg" alt="وعد مازن" class="profile-img">
-                <h1>وعد مازن علي بنات</h1>
-                <p>مطور واجهات ويب متقدم</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                </div>
-            </div>
-        </header>
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="صورة وعد مازن" class="profile-img" />
+      <h1>وعد مازن علي بنات</h1>
+      <p>مطور واجهات ويب</p>
+      <div class="social-links" aria-label="روابط التواصل الاجتماعي">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:waad@example.com" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+      </div>
+    </header>
 
-        <section>
-            <h2>📁 الخبرات المهنية</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>ريادي أعمال يدوية</h3>
-                    <div class="date">2021 - الحاضر</div>
-                    <ul>
-                        <li>تصميم منتجات فريدة باستخدام تقنيات حديثة</li>
-                        <li>إدارة سلسلة إنتاج متكاملة</li>
-                        <li>تحليل بيانات السوق واتخاذ قرارات استراتيجية</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <main>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> الخبرات العملية</h2>
+        <article class="experience-item">
+          <h3>أعمال يدوية - ريادي</h3>
+          <p class="date">يناير 2021 - الحاضر</p>
+          <ul>
+            <li>تصميم وتنفيذ مشاريع إبداعية</li>
+            <li>إدارة عمليات الإنتاج والتسويق</li>
+          </ul>
+        </article>
+      </section>
 
-        <section>
-            <h2>🎓 المؤهلات العلمية</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>بكالوريوس علوم الحاسوب</h3>
-                    <div class="date">2021 - 2026</div>
-                    <p>جامعة القدس المفتوحة - تخصص أنظمة المعلومات</p>
-                </div>
-            </div>
-        </section>
+      <section>
+        <h2><i class="fas fa-graduation-cap"></i> التعليم</h2>
+        <article class="education-item">
+          <h3>بكالوريوس علوم الحاسوب</h3>
+          <p class="date">جامعة القدس المفتوحة | 2021-2026</p>
+          <p>تخصص: أنظمة المعلومات الحاسوبية</p>
+        </article>
+      </section>
 
-        <section>
-            <h2>💻 المهارات التقنية</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h4>التصميم الرقمي</h4>
-                    <p>Adobe CC · Figma · UI/UX</p>
-                </div>
-                <div class="skill-card">
-                    <h4>تطوير الويب</h4>
-                    <p>React · Node.js · MongoDB</p>
-                </div>
-                <div class="skill-card">
-                    <h4>الذكاء الاصطناعي</h4>
-                    <p>Python · TensorFlow · NLP</p>
-                </div>
-            </div>
-        </section>
+      <section>
+        <h2><i class="fas fa-code"></i> المهارات التقنية</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML5 & CSS3</div>
+          <div class="skill-card">JavaScript ES6+</div>
+          <div class="skill-card">React.js</div>
+          <div class="skill-card">UI/UX Design</div>
+        </div>
+      </section>
 
-        <section>
-            <h2>📬 تواصل معي</h2>
-            <div style="display: grid; gap: 1.5rem;">
-                <div style="display: flex; align-items: center; gap: 1rem;">
-                    <i class="fas fa-map-marker-alt" style="font-size: 1.5rem;"></i>
-                    <p>غزة، شارع الجلاء، فلسطين</p>
-                </div>
-                <a href="cv.pdf" class="download-btn" download>
-                    <i class="fas fa-download"></i>
-                    تنزيل السيرة الذاتية
-                </a>
-            </div>
-        </section>
-    </div>
+      <section>
+        <h2><i class="fas fa-address-card"></i> التواصل</h2>
+        <address>
+          <p><i class="fas fa-map-marker-alt"></i> غزة، فلسطين</p>
+          <p><i class="fas fa-phone"></i> +970 599 000 000</p>
+          <p><i class="fas fa-envelope"></i> waad@example.com</p>
+        </address>
+        <a href="cv.pdf" class="download-btn" download>
+          <i class="fas fa-download"></i>
+          تحميل السيرة الذاتية
+        </a>
+      </section>
+    </main>
+  </div>
 
-    <script>
-        // تفعيل تأثيرات الشريط المتلألئ عند التمرير
-        document.addEventListener('scroll', () => {
-            const skills = document.querySelectorAll('.skill-card');
-            skills.forEach(skill => {
-                const rect = skill.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.8) {
-                    skill.style.animationPlayState = 'running';
-                }
-            });
-        });
-    </script>
+  <footer>
+    <p>© <span id="year"></span> جميع الحقوق محفوظة | تم التطوير بواسطة <span style="color: var(--accent-color);">وعد بنات</span></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
